@@ -25,14 +25,14 @@ const Task = ({ name, description, removeTask, editTask }) => {
 
   return (
     <>
-      <div className='d-flex row justify-content-between mx-0'>
+      <div className='d-flex row justify-content-between mx-0 align-items-center'>
         {/* Name Task */}
         <div className='col-6 p-0'>
-          <h4 className="mb-0" style={{ overflow: 'auto hidden' }} >{name}</h4>
+          <h4 className="mb-0" style={{ overflow: 'auto hidden', wordBreak: 'break-all' }} >{name}</h4>
         </div>
 
         {/* Button Group Task */}
-        <ButtonGroup className="col-6 gap-2 gap-sm-1 gap-md-3">
+        <ButtonGroup className="col-6 gap-2 gap-sm-1 gap-md-3" style={{ height: '100%' }}>
           <Button
             color="warning"
             className="btn-sm text-white"
