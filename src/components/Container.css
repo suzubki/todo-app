@@ -1,0 +1,5 @@
+@media (min-width: 576px) {
+    .new-width-container{
+        min-width: 49% !important;
+    }
+}
